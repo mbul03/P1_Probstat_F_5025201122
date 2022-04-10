@@ -34,7 +34,7 @@ Bandingkan Hasil poin a dan b , apa kesimpulan yang bisa didapatkan?
 #C
 # Hasil dari perhitungan poin A dan B hanya berselisih tipis, dengan hasil poin A adalah nilai yang konstan sedangkan poin B adalah hasil generasi random.
 ```
-Hasil simulasi yang didapatkan mendekati hasil nyata dengan kesalahan relatif yaitu 3,03%
+Hasil simulasi yang didapatkan mendekati hasil nyata dengan kesalahan relatif 3,03%
 
 ## 1.d
 Histogram Distribusi Geometrik , Peluang X = 3 gagal Sebelum Sukses Pertama
@@ -53,6 +53,7 @@ var = (1-p)/p^2
 print(paste("Varian(σ²) : ", var)
 ```
 ![image](https://user-images.githubusercontent.com/72655925/162618924-9892481b-a430-422b-9435-1418fd2d5475.png)
+
 didapat dengan menggunakan rumus
 μ = 1/p dan σ² = (1-p)/p^2
 
