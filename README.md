@@ -59,3 +59,37 @@ print(paste("Varian(σ²) : ", var)
 didapat dengan menggunakan rumus
 μ = 1/p dan σ² = (1-p)/p^2
 
+# Soal 2
+Terdapat 20 pasien menderita Covid19 dengan peluang sembuh sebesar 0.2. Tentukan :
+## 2.a
+Peluang terdapat 4 pasien yang sembuh
+```R
+x = 20 #variabel sampel
+y = 0.2 #variabel peluang sembuh
+z = 0.8 #variabel peluang tidak sembuh didapat dari 1-0,2
+
+# A
+dbinom(4, x, y)
+```
+![image](https://user-images.githubusercontent.com/72655925/162620075-baa0e577-202d-4611-af19-66a1bdca0b72.png)
+didapat menggunakan fungsi dbinom
+## 2.b
+Gambarkan grafik histogram berdasarkan kasus tersebut
+```R
+# B
+pel <- dbinom(1:20, 20, 0.2)
+data = data.frame(y=c(pel), x=c(1:20))
+barplot(data$y, names.arg=data$x, ylab="Peluang Sembuh", xlab="Jumlah Pasien yang Sembuh")
+```
+![image](https://user-images.githubusercontent.com/72655925/162620129-7e234a9f-f365-4101-bbbb-c9f41af49e59.png)
+
+## 2.c
+Nilai rataan (μ) dan varian (σ²) dari distribusi Binomial
+```R
+# C
+rata = 4*y
+cat ("Rataan(μ) = ", rata, "\n")
+var = 4*y*z
+cat ("Varian(σ²) = ", var, "\n")
+```
+![image](https://user-images.githubusercontent.com/72655925/162620207-e2fc9848-1bd7-4845-b8fd-40c9d45e2c81.png)
