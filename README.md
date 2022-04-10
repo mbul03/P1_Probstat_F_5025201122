@@ -1,6 +1,5 @@
 # P1_Probstat_F_5025201122
 Laporan Praktikum Modul 1 Probabilitas dan Statistik 2022
-
 Marsyavero Charisyah Putra - 5025201122
 
 # Soal 1
@@ -93,3 +92,41 @@ var = 4*y*z
 cat ("Varian(σ²) = ", var, "\n")
 ```
 ![image](https://user-images.githubusercontent.com/72655925/162620207-e2fc9848-1bd7-4845-b8fd-40c9d45e2c81.png)
+
+# Soal 3
+Diketahui data dari sebuah tempat bersalin di rumah sakit tertentu menunjukkan rata-rata historis 4,5 bayi lahir di rumah sakit ini setiap hari. (gunakan Distribusi Poisson)
+## 3.a
+Peluang bahwa 6 bayi akan lahir di rumah sakit besok
+```R
+# A
+print( dpois (6, 4.5) )
+```
+![image](https://user-images.githubusercontent.com/72655925/162622596-e87ef80e-342a-4c3d-b5b6-f9b8de8f957f.png)
+## 3.b
+simulasikan dan buatlah histogram kelahiran 6 bayi akan lahir di rumah sakit ini selama setahun (n = 365)
+```R
+# B
+peluang = dpois (6, 4.5)
+data = data.frame(y=c(peluang), x=c(1:365))
+barplot(data$y, names.arg=data$x, ylab="Peluang", xlab="Hari ke-", ylim=0:1)
+```
+![image](https://user-images.githubusercontent.com/72655925/162622949-e77cc61d-b155-4a35-85dc-784bc5394997.png)
+## 3.c
+Bandingkan hasil poin a dan b , Apa kesimpulan yang bisa didapatkan
+```R 
+# C
+# Hasil a sama b tidak berubah.
+```
+didapatkan bahwa nilai distribusi poisson tidak berubah dari hari pertama hingga hari terakhir.
+## 3.d
+Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Poisson
+```R 
+# D
+rata = 4.5
+var = 4.5
+#rataan
+cat ("Rataan(μ) = ", rata, "\n")
+#varian
+cat ("Varian(σ²) = ", var, "\n"
+```
+![image](https://user-images.githubusercontent.com/72655925/162623150-1ffcc106-a313-49a7-a9cb-cd51e824de60.png)
