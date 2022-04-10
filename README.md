@@ -183,6 +183,7 @@ set.seed(1)
 hist(rexp(1000), main = "saat n = 1000")
 set.seed(1)
 hist(rexp(10000), main = "saat n = 10000")
+par(mfrow = c(1, 1))
 ```
 ![image](https://user-images.githubusercontent.com/72655925/162625146-1ea1f420-f13d-47cb-9f46-069fc2685774.png)
 ## 5.c
