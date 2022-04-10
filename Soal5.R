@@ -12,7 +12,7 @@ set.seed(1)
 hist(rexp(1000), main = "saat n = 1000")
 set.seed(1)
 hist(rexp(10000), main = "saat n = 10000")
-
+par(mfrow = c(1, 1))
 
 # C
 rata = 3
