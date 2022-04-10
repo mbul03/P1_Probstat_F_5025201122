@@ -1,7 +1,7 @@
 # P1_Probstat_F_5025201122
 Laporan Praktikum Modul 1 Probabilitas dan Statistik 2022
 
-## Marsyavero Charisyah Putra - 5025201122
+Marsyavero Charisyah Putra - 5025201122
 
 # Soal 1
 Seorang penyurvei secara acak memilih orang-orang di jalan sampai dia bertemu dengan seseorang yang menghadiri acara vaksinasi sebelumnya
