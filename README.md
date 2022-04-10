@@ -160,3 +160,38 @@ var = 2*10
 cat ("Varian(σ²) = ", var, "\n")
 ```
 ![image](https://user-images.githubusercontent.com/72655925/162624671-9edf81ca-2052-4475-bc48-e56a6208a71b.png)
+# Soal 5
+Diketahui bilangan acak (random variable) berdistribusi exponential (λ = 3). Tentukan:
+## 5.a
+Fungsi Probabilitas dari distribusi Exponensial
+```R 
+# A
+lamda=3
+dexp(3)
+```
+![image](https://user-images.githubusercontent.com/72655925/162625023-08309433-24c3-43fb-b515-516203acd7c3.png)
+## 5.b
+Histogram dari Distribusi Exponensial untuk 10, 100, 1000 dan 10000 bilangan random
+```R 
+# B
+par(mfrow = c(2, 2))
+set.seed(1)
+hist(rexp(10), main = "saat n = 10")
+set.seed(1)
+hist(rexp(100), main = "saat n = 100")
+set.seed(1)
+hist(rexp(1000), main = "saat n = 1000")
+set.seed(1)
+hist(rexp(10000), main = "saat n = 10000")
+```
+![image](https://user-images.githubusercontent.com/72655925/162625146-1ea1f420-f13d-47cb-9f46-069fc2685774.png)
+## 5.c
+Nilai Rataan (μ) dan Varian (σ²) dari Distribusi Exponensial untuk n = 100 dan λ = 3
+```R 
+# C
+rata = 3
+cat ("Rataan(μ) = ", rata, "\n")
+var = lamda*3
+cat ("Varian(σ²) = ", var, "\n")
+```
+![image](https://user-images.githubusercontent.com/72655925/162625246-8e7684fa-18b7-4ef0-b162-68927eae0bc3.png)
