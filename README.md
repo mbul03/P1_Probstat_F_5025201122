@@ -68,9 +68,9 @@ y = 0.2 #variabel peluang sembuh
 z = 0.8 #variabel peluang tidak sembuh didapat dari 1-0,2
 
 # A
-dbinom(4, x, y)
+print(dbinom(4, x, y))
 ```
-![image](https://user-images.githubusercontent.com/72655925/162620075-baa0e577-202d-4611-af19-66a1bdca0b72.png)
+![image](https://user-images.githubusercontent.com/72655925/162624478-abf9d2df-cf63-4d97-8922-c2a9389781db.png)
 didapat menggunakan fungsi dbinom
 ## 2.b
 Gambarkan grafik histogram berdasarkan kasus tersebut
@@ -130,3 +130,33 @@ cat ("Rataan(μ) = ", rata, "\n")
 cat ("Varian(σ²) = ", var, "\n"
 ```
 ![image](https://user-images.githubusercontent.com/72655925/162623150-1ffcc106-a313-49a7-a9cb-cd51e824de60.png)
+# Soal 4
+Diketahui nilai x = 2 dan v = 10. Tentukan:
+## 4.a
+Fungsi Probabilitas dari Distribusi Chi-Square.
+```R 
+#A
+x<-2
+v<-10
+dchisq(2,10)
+```
+![image](https://user-images.githubusercontent.com/72655925/162624571-e14c221d-fbac-4cad-ba8d-9b14b8147683.png)
+
+## 4.b
+Histogram dari Distribusi Chi-Square dengan 100 data random.
+```R 
+#B
+Hasil = rchisq(100, 10)
+hist(Hasil)
+```
+![image](https://user-images.githubusercontent.com/72655925/162624614-c9a81f8b-d804-4c53-9457-06b7ebcfb522.png)
+## 4.c
+Nilai Rataan (μ) dan Varian (σ²) dari DistribusiChi-Square.
+```R 
+#C
+rata = 10
+cat ("Rataan(μ) = ", rata, "\n")
+var = 2*10
+cat ("Varian(σ²) = ", var, "\n")
+```
+![image](https://user-images.githubusercontent.com/72655925/162624671-9edf81ca-2052-4475-bc48-e56a6208a71b.png)
