@@ -3,7 +3,7 @@ y = 0.2 #variabel peluang sembuh
 z = 0.8 #variabel peluang tidak sembuh didapat dari 1-0,2
 
 # A
-dbinom(4, x, y)
+print(dbinom(4, x, y))
 
 # B
 
@@ -15,4 +15,4 @@ barplot(data$y, names.arg=data$x, ylab="Peluang Sembuh", xlab="Jumlah Pasien yan
 rata = 4*y
 cat ("Rataan(??) = ", rata, "\n")
 var = 4*y*z
-cat ("Varian(??²) = ", var, "\n")
+cat ("Varian(??Â²) = ", var, "\n")
